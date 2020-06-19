@@ -1,19 +1,44 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import "react-native-gesture-handler"; //must be at top
+import Tabs from "./routes/Tabs";
+import * as Font from "expo-font";
+import { AppLoading } from "expo";
+import React, { useState } from "react";
+import EStyleSheet from "react-native-extended-stylesheet";
+import { NavigationContainer } from "@react-navigation/native";
+//import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+//import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+//import HomeStack from "./routes/HomeStack";
+import Navigator from "./routes/Drawer";
+
+const getFonts = () => {
+  return Font.loadAsync({
+    "nunito-bold": require("./assets/fonts/Nunito-Bold.ttf"),
+    "nunito-regular": require("./assets/fonts/Nunito-Regular.ttf"),
+    "rocksalt-regular": require("./assets/fonts/RockSalt-Regular.ttf"),
+    "greatvibes-regular": require("./assets/fonts/GreatVibes-Regular.ttf"),
+  });
+};
+
+EStyleSheet.build({
+  // always call EStyleSheet.build() even if you don't use global variables!
+  $textColor: "#0275d8",
+  $fontFamily: "nunito-bold",
+  $padding: 24,
+  $fontSize: 18,
+});
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+  const [fontsLoaded, setFontsLoaded] = useState(false);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  if (fontsLoaded) {
+    return (
+      <NavigationContainer>
+        <Tabs />
+      </NavigationContainer>
+    );
+  } else {
+    return (
+      <AppLoading startAsync={getFonts} onFinish={() => setFontsLoaded(true)} />
+    );
+  }
+}
