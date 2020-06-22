@@ -2,9 +2,9 @@ import React from "react";
 //import { pics } from "../styles/pic_data";
 import HomeButton from "../shared/HomeButton";
 import HomeImage from "../shared/HomePageImg";
+import { Zocial } from "@expo/vector-icons";
 import EStyleSheet from "react-native-extended-stylesheet";
 import { Text, View, TouchableOpacity } from "react-native";
-import { Zocial } from "@expo/vector-icons";
 
 function MyButton({ navigation }) {
   return (
@@ -34,7 +34,7 @@ export default function HomePage({ navigation }) {
         <Text style={styles.titleTxt}>Chinese/Japanese Cuisine</Text>
         <Text style={styles.txt}>Saki, Beer, Wine, Mixed Drinks</Text>
         <Text style={styles.txt}>Sushi Bar</Text>
-        <HomeButton navigation={navigation} />
+        <HomeButton />
       </View>
     </View>
   );

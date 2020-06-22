@@ -15,10 +15,10 @@ const styles = EStyleSheet.create({
     textAlign: "center",
   },
   txt: {
-    fontFamily: "rocksalt-regular",
+    fontFamily: "nunito-bold",
     color: "white",
     letterSpacing: 1,
-    fontSize: 17,
+    fontSize: 19,
     textAlign: "center",
   },
 });

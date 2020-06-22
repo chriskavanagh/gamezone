@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "../screens/Contact";
-import NavHeader from "../shared/NavHeader";
+//import NavHeader from "../shared/NavHeader";
 
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -22,9 +22,10 @@ export default function HomeStack({ navigation }) {
         name="Contact"
         component={Contact}
         options={{
-          headerTitle: (props) => (
+          title: "Contact Us",
+          /* headerTitle: (props) => (
             <NavHeader navigation={navigation} {...props} />
-          ),
+          ), */
         }}
       />
     </Stack.Navigator>

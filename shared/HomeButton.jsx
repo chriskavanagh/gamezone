@@ -2,8 +2,10 @@ import React from "react";
 //import { pics } from "../styles/pic_data";
 import { Text, TouchableOpacity } from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
+import { useNavigation } from "@react-navigation/native";
 
-export default ({ navigation }) => {
+export default () => {
+  const navigation = useNavigation();
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate("Contact")}

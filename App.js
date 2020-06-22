@@ -7,7 +7,7 @@ import EStyleSheet from "react-native-extended-stylesheet";
 import { NavigationContainer } from "@react-navigation/native";
 //import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 //import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-//import HomeStack from "./routes/HomeStack";
+import HomeStack from "./routes/HomeStack";
 import Navigator from "./routes/Drawer";
 
 const getFonts = () => {
@@ -29,11 +29,12 @@ EStyleSheet.build({
 
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
+  const [user, setUser] = useState("Chris");
 
   if (fontsLoaded) {
     return (
       <NavigationContainer>
-        <Tabs />
+        {user ? <Tabs /> : <HomeStack />}
       </NavigationContainer>
     );
   } else {
