@@ -3,13 +3,13 @@ import Tabs from "./routes/Tabs";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 import React, { useState } from "react";
+import HomeStack from "./routes/HomeStack";
+import { ThemeProvider } from "react-native-elements";
 import EStyleSheet from "react-native-extended-stylesheet";
 import { NavigationContainer } from "@react-navigation/native";
 //import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 //import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import HomeStack from "./routes/HomeStack";
 //import Navigator from "./routes/Drawer";
-import { ThemeProvider } from "react-native-elements";
 
 const getFonts = () => {
   return Font.loadAsync({

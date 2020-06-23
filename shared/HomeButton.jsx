@@ -3,8 +3,24 @@ import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
 import { useNavigation } from "@react-navigation/native";
+import { Button } from "react-native-elements";
 
 export default () => {
+  const navigation = useNavigation();
+  return (
+    <Button
+      onPress={() => navigation.navigate("Contact")}
+      title="Order Online!"
+      type="outline"
+      color="white"
+      buttonStyle={{ borderColor: "#f96332", width: 380, marginTop: 25 }}
+      titleStyle={{ color: "white" }}
+      // style={styles.btn}
+    />
+  );
+};
+
+/* export default () => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity
@@ -28,4 +44,4 @@ const styles = EStyleSheet.create({
     borderColor: "#f96332",
     marginBottom: 7,
   },
-});
+}); */

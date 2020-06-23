@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View } from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
 import { MaterialIcons, AntDesign, Zocial } from "@expo/vector-icons";
 import { Button } from "react-native-elements";
@@ -39,7 +39,7 @@ export default function Contact({ navigation }) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
   top: {
     flex: 1,
     flexDirection: "row",
