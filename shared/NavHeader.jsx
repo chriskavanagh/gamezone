@@ -18,7 +18,7 @@ const styles = EStyleSheet.create({
     fontFamily: "nunito-bold",
     color: "white",
     letterSpacing: 1,
-    fontSize: 19,
+    fontSize: 25,
     textAlign: "center",
   },
 });

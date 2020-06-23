@@ -1,7 +1,7 @@
 import React from "react";
+import Menu from "../screens/Menu";
 import Contact from "../screens/Contact";
 import NavHeader from "../shared/NavHeader";
-import Menu from "../screens/Menu";
 import LunchMenu from "../screens/LunchMenu";
 import { createStackNavigator } from "@react-navigation/stack";
 

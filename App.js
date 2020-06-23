@@ -8,7 +8,8 @@ import { NavigationContainer } from "@react-navigation/native";
 //import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 //import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import HomeStack from "./routes/HomeStack";
-import Navigator from "./routes/Drawer";
+//import Navigator from "./routes/Drawer";
+import { ThemeProvider } from "react-native-elements";
 
 const getFonts = () => {
   return Font.loadAsync({
@@ -34,7 +35,7 @@ export default function App() {
   if (fontsLoaded) {
     return (
       <NavigationContainer>
-        {user ? <Tabs /> : <HomeStack />}
+        <ThemeProvider>{user ? <Tabs /> : <HomeStack />}</ThemeProvider>
       </NavigationContainer>
     );
   } else {

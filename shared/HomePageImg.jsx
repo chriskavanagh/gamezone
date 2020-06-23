@@ -13,8 +13,8 @@ export default () => {
       <ImageBackground source={Pic8} style={styles.container}>
         <View style={styles.overlay} />
         <View style={styles.top}>
-          {/* <Text style={styles.txt}>Szechuans Restaurant</Text> */}
-          {/* <Text style={styles.sub}>Chinese/Japanese Cuisine</Text>
+          {/* <Text style={styles.txt}>Szechuans Restaurant</Text> 
+          <Text style={styles.sub}>Chinese/Japanese Cuisine</Text>
           <Text style={styles.sub2}>Saki, Beer, Wine, Mixed Drinks</Text>
           <Text style={styles.sub2}>Sushi Bar</Text> */}
         </View>
@@ -32,7 +32,7 @@ const styles = EStyleSheet.create({
     position: "relative",
   },
   overlay: {
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.4)",
     position: "absolute",
     top: 0,
     right: 0,
