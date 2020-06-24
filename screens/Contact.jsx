@@ -16,12 +16,6 @@ export default function Contact({ navigation }) {
           <Text style={styles.label}>Delivery Hrs:</Text>
           <Text style={styles.txt}>11:30 - 3:00PM</Text>
           <Text style={styles.txt}>5:00 - 9:00PM</Text>
-          {/* <Button
-            onPress={() => navigation.navigate("Home")}
-            title="Back Home"
-            type="outline"
-            style={styles.goBack}
-          /> */}
         </View>
         <View style={styles.subContainer}>
           <Text style={styles.label}>Pick Up Hours:</Text>
@@ -35,14 +29,35 @@ export default function Contact({ navigation }) {
           <Text style={styles.txt}>11:30AM - 9:00PM</Text>
         </View>
       </View>
+      <View style={styles.last}>
+        <Button
+          onPress={() => navigation.goBack()}
+          title="Go Back"
+          type="outline"
+          titleStyle={{ color: "#f96332" }}
+          buttonStyle={{
+            borderColor: "gray",
+            borderWidth: 4,
+            width: 380,
+            marginTop: 16,
+          }}
+        />
+      </View>
     </>
   );
 }
 
 const styles = EStyleSheet.create({
   top: {
+    flex: 2,
+    flexDirection: "row",
+  },
+  last: {
     flex: 1,
     flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#303030",
   },
   label: {
     color: "orange",

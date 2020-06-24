@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Practice App.",
+    "githubUrl": "https://github.com/chriskavanagh/gamezone"
   }
 }
