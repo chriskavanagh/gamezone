@@ -14,7 +14,7 @@ export default () => {
       initialRouteName="Home"
       activeColor="#f0edf6"
       inactiveColor="#3e2465"
-      barStyle={{ backgroundColor: "#565656" }}
+      barStyle={{ backgroundColor: "#DCDCDC" }}
       tabBarOptions={{
         labelPosition: "below-icon",
         activeBackgroundColor: "#f0edf6",
@@ -26,7 +26,7 @@ export default () => {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color }) => (
-            <Icon name="ios-home" color={color} size={26} />
+            <Icon name="ios-home" color={color} size={25} />
           ),
         }}
       />
@@ -37,7 +37,7 @@ export default () => {
         options={{
           tabBarLabel: "Contact",
           tabBarIcon: ({ color }) => (
-            <Icon name="ios-call" color={color} size={26} />
+            <Icon name="ios-call" color={color} size={25} />
           ),
         }}
       />
@@ -47,7 +47,7 @@ export default () => {
         options={{
           tabBarLabel: "Menu",
           tabBarIcon: ({ color }) => (
-            <Icon name="ios-restaurant" color={color} size={26} />
+            <Icon name="ios-restaurant" color={color} size={25} />
           ),
         }}
       />

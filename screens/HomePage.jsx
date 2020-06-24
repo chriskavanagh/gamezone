@@ -13,13 +13,13 @@ function MyButton({ navigation }) {
       style={styles.mybutton}
     >
       <View style={styles.wrapper}>
-        <Zocial name="facebook" size={26} color="#f96332" />
+        <Zocial name="facebook" size={25} color="#f96332" />
       </View>
       <View style={styles.wrapper}>
-        <Zocial name="twitter" size={26} color="#f96332" />
+        <Zocial name="twitter" size={25} color="#f96332" />
       </View>
       <View style={styles.wrapper}>
-        <Zocial name="instagram" size={26} color="#f96332" />
+        <Zocial name="instagram" size={25} color="#f96332" />
       </View>
     </TouchableOpacity>
   );

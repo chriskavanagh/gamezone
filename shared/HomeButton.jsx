@@ -4,12 +4,18 @@ import { Text, TouchableOpacity } from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
 import { useNavigation } from "@react-navigation/native";
 import { Button } from "react-native-elements";
+//import * as Linking from "expo-linking";
+import * as WebBrowser from "expo-web-browser";
 
-export default () => {
+export default (props) => {
   const navigation = useNavigation();
+  const handlePress = () => {
+    //Linking.openURL("https://expo.io");
+    WebBrowser.openBrowserAsync("https://expo.io");
+  };
   return (
     <Button
-      onPress={() => navigation.navigate("Contact")}
+      onPress={handlePress}
       title="Order Online!"
       type="outline"
       buttonStyle={{

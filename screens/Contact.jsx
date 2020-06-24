@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
-import EStyleSheet from "react-native-extended-stylesheet";
 import { Button } from "react-native-elements";
+import EStyleSheet from "react-native-extended-stylesheet";
 //import { MaterialIcons, AntDesign, Zocial } from "@expo/vector-icons";
 
 export default function Contact({ navigation }) {
@@ -9,16 +9,16 @@ export default function Contact({ navigation }) {
     <>
       <View style={styles.top}>
         <View style={styles.container}>
-          <Text style={styles.label}>Location:</Text>
+          <Text style={styles.label}>Location</Text>
           <Text style={styles.txt}>5207 Bernard Dr</Text>
           <Text style={styles.txt}>Roanoke, VA 24018</Text>
           <Text style={styles.txt}>540-989-7947</Text>
-          <Text style={styles.label}>Delivery Hrs:</Text>
-          <Text style={styles.txt}>11:30 - 3:00PM</Text>
-          <Text style={styles.txt}>5:00 - 9:00PM</Text>
+          <Text style={styles.label}>Delivery Hrs</Text>
+          <Text style={styles.txt}>11:30AM - 3:00PM</Text>
+          <Text style={styles.txt}>5:00PM - 9:00PM</Text>
         </View>
         <View style={styles.subContainer}>
-          <Text style={styles.label}>Pick Up Hours:</Text>
+          <Text style={styles.label}>Pick Up Hours</Text>
           <Text style={styles.headTxt}>Sun - Mon</Text>
           <Text style={styles.txt}>11:30AM - 9:00PM</Text>
           <Text style={styles.headTxt}>Tue</Text>
@@ -61,19 +61,20 @@ const styles = EStyleSheet.create({
   },
   label: {
     color: "orange",
-    fontSize: 21,
+    fontSize: 20,
     paddingTop: 15,
     paddingBottom: 15,
+    textDecorationLine: "underline",
   },
   txt: {
     color: "white",
-    fontSize: 16,
+    fontSize: 15,
     paddingBottom: 18,
     fontStyle: "italic",
   },
   headTxt: {
     color: "white",
-    fontSize: 19,
+    fontSize: 18,
     paddingBottom: 0,
   },
   container: {
