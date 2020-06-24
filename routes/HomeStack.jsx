@@ -32,6 +32,7 @@ export default function HomeStack({ navigation }) {
           headerTitle: (props) => (
             <NavHeader navigation={navigation} {...props} />
           ),
+          // headerShown: false,
         }}
       />
       <Stack.Screen

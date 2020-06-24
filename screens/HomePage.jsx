@@ -75,14 +75,6 @@ const styles = EStyleSheet.create({
     position: "relative",
   },
 
-  button: {
-    alignItems: "center",
-    backgroundColor: "#FF8C00",
-    padding: 10,
-    borderRadius: 5,
-    width: "70%",
-    marginVertical: 20,
-  },
   mybutton: {
     position: "relative",
     bottom: 44,

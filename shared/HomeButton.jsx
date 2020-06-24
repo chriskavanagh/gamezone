@@ -12,10 +12,14 @@ export default () => {
       onPress={() => navigation.navigate("Contact")}
       title="Order Online!"
       type="outline"
-      color="white"
-      buttonStyle={{ borderColor: "#f96332", width: 380, marginTop: 25 }}
-      titleStyle={{ color: "white" }}
-      // style={styles.btn}
+      buttonStyle={{
+        borderColor: "gray",
+        borderWidth: 4,
+        width: 380,
+        marginTop: 16,
+        // backgroundColor: "#F5F5F5",
+      }}
+      titleStyle={{ color: "#f96332" }}
     />
   );
 };

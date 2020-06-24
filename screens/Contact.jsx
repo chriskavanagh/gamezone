@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
-import { MaterialIcons, AntDesign, Zocial } from "@expo/vector-icons";
 import { Button } from "react-native-elements";
+//import { MaterialIcons, AntDesign, Zocial } from "@expo/vector-icons";
 
 export default function Contact({ navigation }) {
   return (
@@ -16,6 +16,12 @@ export default function Contact({ navigation }) {
           <Text style={styles.label}>Delivery Hrs:</Text>
           <Text style={styles.txt}>11:30 - 3:00PM</Text>
           <Text style={styles.txt}>5:00 - 9:00PM</Text>
+          {/* <Button
+            onPress={() => navigation.navigate("Home")}
+            title="Back Home"
+            type="outline"
+            style={styles.goBack}
+          /> */}
         </View>
         <View style={styles.subContainer}>
           <Text style={styles.label}>Pick Up Hours:</Text>
@@ -27,12 +33,6 @@ export default function Contact({ navigation }) {
           <Text style={styles.txt}>11:30AM - 9:00PM</Text>
           <Text style={styles.headTxt}>Fri - Sat</Text>
           <Text style={styles.txt}>11:30AM - 9:00PM</Text>
-          <Button
-            onPress={() => navigation.navigate("Home")}
-            title="Back Home"
-            type="outline"
-            style={styles.btn}
-          />
         </View>
       </View>
     </>
@@ -79,7 +79,10 @@ const styles = EStyleSheet.create({
     paddingTop: 55,
     fontWeight: "bold",
   },
-  btn: {},
+  goBack: {
+    flex: 1,
+    flexDirection: "row",
+  },
 });
 
 /* const styles = EStyleSheet.create({
