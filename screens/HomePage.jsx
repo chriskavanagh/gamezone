@@ -8,20 +8,34 @@ import { Text, View, TouchableOpacity } from "react-native";
 
 function MyButton({ navigation }) {
   return (
-    <TouchableOpacity
-      onPress={() => console.log("Hello Home")}
-      style={styles.mybutton}
-    >
-      <View style={styles.wrapper}>
-        <Zocial name="facebook" size={25} color="#f96332" />
-      </View>
-      <View style={styles.wrapper}>
-        <Zocial name="twitter" size={25} color="#f96332" />
-      </View>
-      <View style={styles.wrapper}>
-        <Zocial name="instagram" size={25} color="#f96332" />
-      </View>
-    </TouchableOpacity>
+    <View style={styles.mybuttonView}>
+      <TouchableOpacity
+        onPress={() => console.log("Facebook")}
+        style={styles.mybutton}
+      >
+        <View style={styles.wrapper}>
+          <Zocial name="facebook" size={25} color="#f96332" />
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => console.log("Twitter")}
+        style={styles.mybutton}
+      >
+        <View style={styles.wrapper}>
+          <Zocial name="twitter" size={25} color="#f96332" />
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => console.log("Instagram")}
+        style={styles.mybutton}
+      >
+        <View style={styles.wrapper}>
+          <Zocial name="instagram" size={25} color="#f96332" />
+        </View>
+      </TouchableOpacity>
+    </View>
   );
 }
 
@@ -75,7 +89,7 @@ const styles = EStyleSheet.create({
     position: "relative",
   },
 
-  mybutton: {
+  mybuttonView: {
     position: "relative",
     bottom: 44,
     zIndex: 1000,
@@ -88,7 +102,6 @@ const styles = EStyleSheet.create({
     borderColor: "gray",
     borderWidth: 2,
     borderStyle: "solid",
-    paddingBottom: 7,
-    paddingTop: 7,
+    paddingVertical: 7,
   },
 });

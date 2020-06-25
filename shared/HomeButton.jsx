@@ -23,7 +23,6 @@ export default (props) => {
         borderWidth: 4,
         width: 380,
         marginTop: 16,
-        // backgroundColor: "#F5F5F5",
       }}
       titleStyle={{ color: "#f96332" }}
     />
