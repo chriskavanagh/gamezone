@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { Button } from "react-native-elements";
+import ContactButton from "../shared/ContactButton";
 import EStyleSheet from "react-native-extended-stylesheet";
 //import { MaterialIcons, AntDesign, Zocial } from "@expo/vector-icons";
 
@@ -29,20 +29,7 @@ export default function Contact({ navigation }) {
           <Text style={styles.txt}>11:30AM - 9:00PM</Text>
         </View>
       </View>
-      <View style={styles.last}>
-        <Button
-          onPress={() => navigation.goBack()}
-          title="Go Back"
-          type="outline"
-          titleStyle={{ color: "#f96332" }}
-          buttonStyle={{
-            borderColor: "gray",
-            borderWidth: 4,
-            width: 380,
-            marginTop: 16,
-          }}
-        />
-      </View>
+      <ContactButton />
     </>
   );
 }
@@ -51,13 +38,6 @@ const styles = EStyleSheet.create({
   top: {
     flex: 2,
     flexDirection: "row",
-  },
-  last: {
-    flex: 1,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#303030",
   },
   label: {
     color: "orange",
