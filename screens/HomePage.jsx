@@ -1,10 +1,10 @@
 import React from "react";
 //import { pics } from "../styles/pic_data";
+import { Zocial } from "@expo/vector-icons";
 import HomeButton from "../shared/HomeButton";
 import HomeImage from "../shared/HomePageImg";
-import { Zocial } from "@expo/vector-icons";
 import EStyleSheet from "react-native-extended-stylesheet";
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity, SafeAreaView } from "react-native";
 
 function MyButton({ navigation }) {
   return (
@@ -41,7 +41,7 @@ function MyButton({ navigation }) {
 
 export default function HomePage({ navigation }) {
   return (
-    <View style={{ height: "100%", backgroundColor: "#303030" }}>
+    <SafeAreaView style={{ height: "100%", backgroundColor: "#303030" }}>
       <HomeImage />
       <MyButton />
       <View style={styles.imgContainer}>
@@ -50,7 +50,7 @@ export default function HomePage({ navigation }) {
         <Text style={styles.txt}>Sushi Bar</Text>
         <HomeButton />
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

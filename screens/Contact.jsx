@@ -1,13 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+import SafeView from "../shared/SafeView";
 import ContactButton from "../shared/ContactButton";
+import { Text, View, SafeAreaView } from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
 //import { MaterialIcons, AntDesign, Zocial } from "@expo/vector-icons";
 
 export default function Contact({ navigation }) {
   return (
     <>
-      <View style={styles.top}>
+      <SafeAreaView style={styles.top}>
         <View style={styles.container}>
           <Text style={styles.label}>Location</Text>
           <Text style={styles.txt}>5207 Bernard Dr</Text>
@@ -28,7 +29,7 @@ export default function Contact({ navigation }) {
           <Text style={styles.headTxt}>Fri - Sat</Text>
           <Text style={styles.txt}>11:30AM - 9:00PM</Text>
         </View>
-      </View>
+      </SafeAreaView>
       <ContactButton />
     </>
   );
